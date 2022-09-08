@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/1452beef9e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/dd.jfif" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>   
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                   <p>Software Developer</p> 
+                   <h1>Hi, I am <span>Rishabh</span><br> Mishra from India.</h1>
+                </div>
+            </div>
+        </div>
+<!----------------about----------------------->
+        <div id="about">
+           <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/mm_1.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I am an passionate Electronics and Communication Engineer,wanting to work in a tech company,where,i can use my skills to make the human life better and also to benefit the organization in which i will be working.
+                        </p>
+
+                        <div class="tab-tiles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C/C++</span><br>Designing System Softwares</li>
+                                <li><span>Python</span><br>Developing Prediction Models</li>
+                                <li><span>OOPs</span><br>Developing Applicatiions Based on OOPs</li>
+                                <li><span>HTMl/CSS/JS</span><br>Designing WebSites</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>JUNE 2022 - AUGUST 2022</span><br>Machine Learning Summer Training at Analytics Vidhya</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2019-2023</span><br>Btech in Electronics and Communication form JECRC,Jaipur(CGPA:9.3/10)</li>
+                                <li><span>2017-2018</span><br>HSC(CGPA:8.7/10)</li>
+                                <li><span>2015-2016</span><br>SSC(CGPA:8.6/10)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+           </div> 
+        </div>
+
+        <div id="services">
+           <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Designing</h2>
+                        <p>Designed websites using HTML,CSS,Js.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Software Designing</h2>
+                        <p>Designed websites using programming languages C/C++.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-message-middle"></i>
+                        <h2>Digital Circuits Designing</h2>
+                        <p>Designed circuits using verilog.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+           </div> 
+        </div>
+        <!-----------------------portfolio--------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Food Website</h3>
+                            <p>Based on the website of zomato.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>ATM Software</h3>
+                            <p>Using the programming language C++ and OOPs.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Customer Churn Prediction Model</h3>
+                            <p>Used the csv dataset,programming language python and the libraries that are Pandas,Numpy,MatPlotlib.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!------------------contact-------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact ME</h1>
+                        <p><i class="fa-regular fa-square-envelope"></i>mishrarishabh31032000@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9462061673</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/rishabh-mishra-666ab2207/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/rishabh673"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                        </div>
+                        <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="E-mail" placeholder="Your E-mail" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Rishabh.Made With <i class="fa-solid fa-face-smile"></i></p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = '<https://script.google.com/macros/s/'
+            'AKfycbzQtqiQ1PT-YtnqbRm59DxXsxpBd6KypQ_rLqQliuYVmb5ZcSXhxxWBhIYtaTORlA/exec>'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
